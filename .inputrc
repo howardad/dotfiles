@@ -1,0 +1,41 @@
+## ~/.inputrc
+## sets readline options for shell
+
+# Use vi rather than emacs style editing in shell
+set editing-mode vi
+
+#Show all completions on one tab even if there's more than one choice
+set show-all-if-ambiguous on
+# on menu-complete, first display common prefix, then cycle through options
+# when hitting TAB
+set menu-complete-display-prefix on
+
+############################################################
+# Keymaps for normal mode
+set keymap vi-command
+
+# Insert the arguments from the last command
+"p": "i !!*\r"
+
+# Up/Down do history search with prefix entered rather than just dumbly cycling
+# through previous commands
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+############################################################
+# Keymaps for insert mode
+set keymap vi-insert
+
+# Pressing TAB will list all completions and select the first one.
+# Pressing it again will cycle through the available completions.
+TAB: menu-complete
+# Shift-TAB cycles backward
+"\e[Z": menu-complete-backward
+
+# Up/Down history search for insert mode
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Binding 'p' in normal mode also wiped its binding in insert mode.
+# This makes 'p' insert 'p' in insert mode. :)
+"p": self-insert
