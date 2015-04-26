@@ -112,7 +112,6 @@ if !exists(":DiffOrig")
                 \ | wincmd p | diffthis
 endif
 
-"let base16colorspace=256
 " Set colorscheme to something lovely
 colorscheme base16-default
 
