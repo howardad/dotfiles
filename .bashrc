@@ -9,13 +9,16 @@
 # PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ " old PS1
 
 # Set prompt using vim-promptline file
-[[ -f ~/.shell_prompt.sh ]] && . ~/.shell_prompt.sh
+#[[ -f ~/.shell_prompt.sh ]] && . ~/.shell_prompt.sh
+#
+#if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+#    export TERM='xterm-256color'
+#else
+#    export TERM='xterm-color'
+#fi
 
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
-else
-    export TERM='xterm-color'
-fi
+# Load Liquid Prompt in interactive shells
+[[ $- = *i* ]] && source ~/dotfiles/liquidprompt/liquidprompt
 
 # Pull in .bash_aliases if it exists
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
