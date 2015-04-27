@@ -5,12 +5,24 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set laststatus=2
+set number
+set hlsearch
+set ignorecase
+set smartcase
+set title
+set mouse=a
 set background=dark
 colorscheme spacegray
 
 " I don't even know what Modula-2 is, so let's change .md filetype detection
 " see https://github.com/tpope/vim-markdown/README.markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" tab settings
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set smartindent
 
 """""""""""""""""
 " Plugin Settings
