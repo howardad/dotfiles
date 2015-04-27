@@ -29,6 +29,9 @@
 # Pull in /etc/bash.colors if it exists
 [[ -f /etc/bash.colors ]] && . /etc/bash.colors
 
+d=.dircolors
+test -r $d && eval "$(dircolors $d)"
+
 GIT_EDITOR='vim'
 export GIT_EDITOR
 
@@ -80,4 +83,4 @@ export PATH=$PATH:"/home/adam/texlive/2014/bin/x86_64-linux"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-doge
+#doge
