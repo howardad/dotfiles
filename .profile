@@ -23,6 +23,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export MANPATH=$MANPATH:/home/adam/texlive/2014/texmf-dist/doc/man
 export INFOPATH=:$INFOPATH:/home/adam/texlive/2014/texmf-dist/doc/info
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/bin/nand2tetris/tools"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
