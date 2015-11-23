@@ -18,7 +18,7 @@
 #fi
 
 # Load Liquid Prompt in interactive shells
-[[ $- = *i* ]] && source ~/dotfiles/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 # Pull in .bash_aliases if it exists
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
