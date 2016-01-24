@@ -18,7 +18,7 @@
 #fi
 
 # Load Liquid Prompt in interactive shells
-[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/git/dotfiles/liquidprompt/liquidprompt
 
 # Pull in .bash_aliases if it exists
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
@@ -38,8 +38,8 @@ export GIT_EDITOR
 EDITOR='vim'
 export EDITOR
 
-VISUAL='gvim'
-export VISUAL
+#VISUAL='gvim'
+#export VISUAL
 
 ANDROID_HOME='/opt/android-sdk'
 export ANDROID_HOME

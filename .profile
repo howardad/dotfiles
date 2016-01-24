@@ -5,6 +5,9 @@ export FINDBUGS_HOME
 # Personalize PATH
 export PATH=$PATH:~/bin:~/bin/android-sdk/tools:~/bin/android-sdk/platform-tools:/usr/lib32/smlnj/bin:$FINDBUGS_HOME/bin:/home/adam/.gem/ruby/2.0.0/bin
 
+# For pacaur
+export AURDEST=/home/sources
+
 # Necessary for SML/NJ
 SMLNJ_HOME=/usr/lib32/smlnj
 export SMLNJ_HOME
